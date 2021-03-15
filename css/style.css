@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 *,
 *::before,
 *::after {
@@ -5,4 +6,134 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  margin: auto;
+  max-width: 900px;
+  -webkit-box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-family: inherit;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: #f4f4f4;
+}
+
+.landing {
+  background-color: #fff;
+}
+
+.landing__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40vw;
+          flex: 0 1 40vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  height: 50vh;
+  text-align: center;
+}
+
+.landing__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60vw;
+          flex: 0 1 60vw;
+  height: 50vh;
+  background: url("https://source.unsplash.com/De8wMYoSSBc") no-repeat center center/cover;
+}
+
+.header {
+  padding: 1.5rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.header h2 {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  margin: auto;
+  padding: 2rem 1rem;
+  color: #333;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 3rem;
+}
+
+@media (min-width: 576px) {
+  .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+  .landing__text {
+    height: 100vh;
+  }
+  .landing__image {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
 }
